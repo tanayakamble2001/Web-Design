@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        .div1{
+            width: 200px;
+            height: 60px;
+            background-color: red;
+            transform: rotate(-30deg);
+        }
+        img:hover{
+            transform: scale(1.1,1.1);
+        }
+        body{
+            background-color: blue;
+        }
+        @media screen and (max-width:900px) {
+            body{
+                background-color: orange;
+            }
+        }
+        @media screen and (max-width:700px) {
+            body{
+                background-color: palevioletred;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <img src="images/image1.jpg" width="300" height="300"/>
+</body>
+</html>

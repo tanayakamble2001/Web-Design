@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient 2</title>
+    <style>
+        div{
+            background-image: conic-gradient(red 0deg,red 90deg,yellow 90deg,yellow 360deg);
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            position: relative;
+            animation-name: ro;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ro{
+            0%{transform: rotate(20deg);left: 90px;}
+            10%{transform: rotate(40deg);left: 160px;}
+            30%{transform: rotate(60deg);left: 390px;}
+            40%{transform: rotate(80deg); left: 630;}
+            50%{transform: rotate(100deg);}
+            60%{transform: rotate(160deg);}
+            70%{transform: rotate(260deg);}
+            100%{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+    </div>
+</body>
+</html>
